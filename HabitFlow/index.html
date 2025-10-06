@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabitFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Habit<span class="highlight">Flow</span></h1>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Hábitos</a></li>
+        <li><a href="estatisticas.html">Estatísticas</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="app-container">
+      <h2>Os Meus Hábitos</h2>
+      <form id="novo-habito-form">
+        <input type="text" id="novo-habito" placeholder="Adicionar novo hábito..." required>
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <div class="progresso-container">
+        <div id="progresso-texto">Progresso: 0%</div>
+        <div class="barra"><div id="progresso-barra"></div></div>
+      </div>
+
+      <ul id="lista-habitos"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 HabitFlow — Gere os teus hábitos com equilíbrio.</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
